@@ -13,15 +13,15 @@
             <!-- -------------Login Section-------------- -->
             <div id="login-form-container">
                 <h2 class="heading">Login</h2>
-                <form id="login-form">
+                <form id="login-form"> <!--action="/login" method="post"-->
                     <div class="inputbox">
-                        <input type="text" required="required">
+                        <input type="text" id="login-username" required="required">
                         <span>First Name</span>
                     </div>
                     <div class="inputbox password">
-                        <input type="password" required="required">
+                        <input type="password" id="login-password" required="required">
                         <span>Password</span>
-                        <i class="fa fa-eye" id="showBtn"></i>
+                        <i class="fa fa-eye" id="showBtn" onclick="togglePassword('login-password')"></i>
                     </div>
                     
                     <button class="primary-button" type="button" onclick="login()">Login</button>
@@ -35,14 +35,15 @@
                 <h2 class="heading">Sign Up</h2>
                 <form id="registration-form">
                     <div class="inputbox">
-                        <input type="text" required="required">
+                        <input type="text" id="register" required="required">
                         <span>First Name</span>
                     </div>
                     <div class="inputbox password">
-                        <input type="password" required="required">
+                        <input type="password" id="register-password" required="required">
                         <span>Password</span>
-                        <i class="fa-solid fa-eye" id="showBtn"></i>
+                        <i class="fa fa-eye" id="showBtn" onclick="togglePassword('register-password')"></i>
                     </div>
+                    
                     
                     <button class="primary-button" type="button" onclick="register()">Sign up</button>
                 </form>
