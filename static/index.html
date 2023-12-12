@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container ">
-        <div class="card-inner">
+    <div class="container">
+        <div class="card-inner" id="cardInner">
             <!-- -------------Login Section-------------- -->
             <div id="login-form-container">
                 <h2 class="heading">Login</h2>
@@ -24,10 +24,10 @@
                         <i class="fa fa-eye" id="showBtn" onclick="togglePassword('login-password')"></i>
                     </div>
                     
-                    <button class="primary-button" type="button" onclick="login()">Login</button>
+                    <button class="primary-button" type="submit" onclick="login()">Login</button>
                 </form>
                 <div class="secondary-button-container">
-                    <button class="secondary-button">Create Account</button>
+                    <button class="secondary-button" onclick="flipCard()">Create Account</button>
                 </div>
             </div>
             <!-- -------------Sign Up Section-------------- -->
@@ -48,7 +48,7 @@
                     <button class="primary-button" type="button" onclick="register()">Sign up</button>
                 </form>
                 <div class="secondary-button-container">
-                    <button class="secondary-button">Already have account?</button>
+                    <button class="secondary-button" onclick="flipCard()">Already have account?</button>
                 </div>
             </div>
         </div>

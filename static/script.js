@@ -1,8 +1,10 @@
+const BASE_URL = 'http://localhost:8000';
+
+// ====Login Function====
 function login() {
     const username = document.getElementById('login-username').value;
     const password = document.getElementById('login-password').value;
 
-    // Assuming you have a login API endpoint
     fetch('http://localhost:8000/auth/login', {
         method: 'POST',
         headers: {
@@ -19,11 +21,11 @@ function login() {
     .catch(error => console.error('Error:', error));
 }
 
+// =====Sign up/Register Function====
 function register() {
     const username = document.getElementById('register-username').value;
     const password = document.getElementById('register-password').value;
 
-    // Assuming you have a registration API endpoint
     fetch('http://localhost:8000/auth/register', {
         method: 'POST',
         headers: {
@@ -40,6 +42,7 @@ function register() {
     .catch(error => console.error('Error:', error));
 }
 
+// =======Function to show/hide password========
 function togglePassword(inputId) {
     const passwordInput = document.getElementById(inputId);
     const showBtn = document.getElementById('showBtn');
@@ -53,4 +56,11 @@ function togglePassword(inputId) {
         showBtn.classList.remove('fa-eye-slash');
         showBtn.classList.add('fa-eye');
     }
+}
+
+// ====Function to flipcard=====
+function flipCard(){
+    const cardInner = document.getElementById("cardInner");
+
+    cardInner.classList.toggle("flip");
 }

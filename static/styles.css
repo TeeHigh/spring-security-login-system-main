@@ -1,8 +1,10 @@
-body {
-    font-family: 'Arial', sans-serif;
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,9 +27,9 @@ body {
     transform-style: preserve-3d;
 }
 
-.flip .card-inner{
+.flip {
     transform: rotateY(180deg) ;
-    transition: transform 0.5s;
+    /* transition: transform 0.5s; */
 }
 
 #login-form-container,
@@ -48,36 +50,6 @@ body {
     text-transform: uppercase;
     margin: 1em 0 1.5em;
 }
-.primary-button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    margin: .2em;
-}
-button{
-    cursor: pointer;
-}
-
-.primary-button:hover {
-    background-color: #0056b3;
-}
-.secondary-button-container{
-    margin-top: 1em;
-}
-.secondary-button{
-    background: transparent;
-    color: #1d2b3a;
-    font-weight: bold;
-    border: none;
-}
-.secondary-button:hover{
-    color: #47586a;
-
-}
-
 .inputbox{
     position: relative;
     display: flex;
@@ -85,6 +57,9 @@ button{
     /* width: 250px; */
     margin: 1.5em;
     background: #314962;
+}
+.password{
+    justify-content: space-around;
 }
 .inputbox input{
     background: transparent;
@@ -145,3 +120,33 @@ button{
     /* outline: none; */
 
 }
+
+/* -------Buttons-------- */
+button{
+    cursor: pointer;
+}
+.primary-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: .2em;
+}
+.primary-button:hover {
+    background-color: #0056b3;
+}
+.secondary-button-container{
+    margin-top: 1em;
+}
+.secondary-button{
+    background: transparent;
+    color: #1d2b3a;
+    font-weight: bold;
+    border: none;
+}
+.secondary-button:hover, .secondary-button:active{
+    color: #70879f;
+}
+
