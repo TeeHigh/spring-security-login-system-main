@@ -92,7 +92,11 @@ body {
     font-size: 1em;
     border-radius: 50%;
     cursor: pointer;
+    /* visibility: hidden; */
 }
+/* .inputbox input:focus ~ i, .inputbox input:valid ~ i{
+    visibility: visible;
+} */
 .inputbox input:valid ~ span,
 .inputbox input:focus ~ span
 {
